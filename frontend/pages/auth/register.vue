@@ -117,10 +117,6 @@ export default {
       )
         return toast({ text: "All fields are required.", type: "error" })
 
-      // If email format is invalid
-      if (!validateEmail(this.email))
-        return toast({ text: "Invalid email format.", type: "error" })
-
       // Checking if password and repeat password is not same
       if (this.password !== this.repeatPassword)
         return toast({ text: "Password not match.", type: "error" })
