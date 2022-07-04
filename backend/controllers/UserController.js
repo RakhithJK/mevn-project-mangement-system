@@ -28,7 +28,7 @@ const createUser = async (req, res) => {
       firstName,
       lastName,
       username,
-      email,
+      email: email.trim(),
       password: hash,
     })
     res.status(200).json(data)
@@ -49,7 +49,7 @@ const loginUser = async (req, res) => {
   }
 
   try {
-    const user = await UserModel.findOne({ email: email })
+    const user = await UserModel.findOne({ email: email.trim() })
     // Checking if user is exists
     if (!user) {
       return res.status(400).json({ error: "Invalid user credentials." })
