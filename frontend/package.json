@@ -1,0 +1,19 @@
+{
+  "name": "mevn-project-management",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "nuxt": "^2.15.0",
+    "toastify-js": "^1.11.2"
+  },
+  "keywords": []
+}
