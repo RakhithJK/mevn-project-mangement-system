@@ -1,5 +1,5 @@
 const config = {
-  API_ENDPOINT: "http://139.59.84.19:4000/api",
+  API_ENDPOINT: "https://codeup-backend.herokuapp.com/api",
 }
 
 export default config
