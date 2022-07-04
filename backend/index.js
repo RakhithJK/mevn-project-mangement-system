@@ -3,6 +3,8 @@ const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
 const cors = require("cors")
+// Server IP
+const SERVER = process.env.SERVER_IP || "127.0.0.1"
 // Port
 const PORT = process.env.PORT || 5000
 // Importing local files
@@ -28,8 +30,8 @@ mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
     // Listening
-    app.listen(PORT, () => {
-      console.log(`Server is running on port ${PORT}`)
+    app.listen(PORT, SERVER, () => {
+      console.log(`Server is running on ${SERVER}:${PORT}`)
     })
   })
   .catch((error) => {
