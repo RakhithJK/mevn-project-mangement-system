@@ -62,10 +62,6 @@ export default {
       if (this.email === "" || this.password === "")
         return toast({ text: "All fields are required.", type: "error" })
 
-      // If email format is invalid
-      if (!validateEmail(this.email))
-        return toast({ text: "Invalid email format.", type: "error" })
-
       // Send request to API
       fetch(`${config.API_ENDPOINT}/auth/login`, {
         method: "POST",
