@@ -3,9 +3,6 @@
 So, this is a project management system I built for my personal use. Here people can create account and add their members. Just the basic funtionallities. Also this was my first MEVN Stack project. So nevermind if there is any bug :)
 
 
-## Demo
-Live Demo - https://codeup.pages.dev
-
 ![Main Demo](https://i.ibb.co/qrXJ7SQ/image.png)
 ## Installation
 
